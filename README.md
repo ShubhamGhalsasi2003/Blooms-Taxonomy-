@@ -1,4 +1,6 @@
-![Python](https://img.shields.io/badge/Tool-Python(Tkinter-&-openpyxl)-blue)  
+![Python](https://img.shields.io/badge/Tool-Python-blue)  
+![Gui](https://img.shields.io/badge/Gui-Tinker-blue) 
+![File export](https://img.shields.io/badge/FileExport-openpyxl-blue) 
 ![Completed](https://img.shields.io/badge/Status-Completed-success)
 
 
