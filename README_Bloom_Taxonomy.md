@@ -1,7 +1,9 @@
 # 🎓 Bloom’s Taxonomy Question Classifier
 
 A **desktop application** that helps teachers and students quickly classify exam questions into the *
+
 <img width="293" height="172" alt="image" src="https://github.com/user-attachments/assets/65cc4b25-1fd4-43d2-a074-820b897d16b6" />
+
 *six levels of Bloom’s Taxonomy** (Remember, Understand, Apply, Analyze, Evaluate, Create).
 ---
 
