@@ -1,6 +1,7 @@
-Tool: Python 🐍 | Data: Excel | Status: Completed ✅
-**Tool:** ![Python](https://img.shields.io/badge/Tool-Python-blue)  
+**Tool:** ![Python](https://img.shields.io/badge/Tool-Python-blue) 
+ 
 **Data:** ![Excel](https://img.shields.io/badge/Data-Excel-green)  
+
 **Status:** ![Completed](https://img.shields.io/badge/Status-Completed-success)
 
 
