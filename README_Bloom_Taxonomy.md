@@ -72,17 +72,6 @@ Login with:
 
 ---
 
-## ✏️ Customizing Keywords
-
-In `bloom_app.py`, under `self.levels_keywords`, you can add or remove verbs to improve classification.
-
-Example:
-
-```python
-"Analyze": ["analyze", "compare", "categorize", "differentiate", "dissect"]
-```
-
----
 
 ## 📈 Future Enhancements
 
