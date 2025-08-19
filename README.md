@@ -1,3 +1,10 @@
+Tool: Python 🐍 | Data: Excel | Status: Completed ✅
+**Tool:** ![Python](https://img.shields.io/badge/Tool-Python-blue)  
+**Data:** ![Excel](https://img.shields.io/badge/Data-Excel-green)  
+**Status:** ![Completed](https://img.shields.io/badge/Status-Completed-success)
+
+
+
 # 🎓 Bloom’s Taxonomy Question Classifier
 **"Bloom’s Taxonomy-Based Question Classification"** uses **NLP** and **WordNet** to categorize questions by cognitive level, enhancing educational assessments.
 
