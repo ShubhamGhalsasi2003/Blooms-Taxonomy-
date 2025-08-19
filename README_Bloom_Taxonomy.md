@@ -1,81 +1,80 @@
-# 🎓 Bloom’s Taxonomy Question Classifier
+# 🎓 Bloom’s Taxonomy Question Classifier
 
-This desktop app lets teachers and students type (or paste) a list of questions and instantly see which Bloom’s‑Taxonomy level each question targets.  
-The program also saves every entry to an Excel sheet on the user’s desktop for later analysis.
+A **desktop application** that helps teachers and students quickly classify exam questions into the **six levels of Bloom’s Taxonomy** (Remember, Understand, Apply, Analyze, Evaluate, Create).
+<img width="293" height="172" alt="image" src="https://github.com/user-attachments/assets/65cc4b25-1fd4-43d2-a074-820b897d16b6" />
 
 ---
 
-## 📌 What the App Does
+## 📌 Features
 
-| Action | Result |
-| ------ | ------ |
-| **Login** as *Student* or *Teacher* | Simple credential check (`student/password`, `teacher/password`) |
-| **Enter questions** separated by commas | App scans each question for Bloom‑keywords |
-| **Click “Show Descriptions”** | Displays the cognitive level (Remember, Understand, Apply, Analyze, Evaluate, Create) for every question |
-| **Excel export** | Automatically appends the questions and their levels to `questions.xlsx` on the desktop |
+* 🔑 **Login system** with two roles:
+
+  * Student → `student` / `password`
+  * Teacher → `teacher` / `password`
+* 📝 Enter multiple questions separated by commas
+* 🧠 Automatic classification into Bloom’s levels using keyword matching
+* 📊 Entering Question Mannulay 
+* 🖥️ Easy-to-use Tkinter GUI
 
 ---
 
 ## 🧰 Tech Stack
 
-- **Python 3** + **Tkinter** – GUI windows  
-- **openpyxl** – writes the Excel file  
-- **Standard library** only for everything else (no external DB)
+| Component   | Technology                       |
+| ----------- | -------------------------------- |
+| Language    | Python 3                         |
+| GUI         | Tkinter                          |
+| File Export | openpyxl                         |
 
 ---
 
-## 🗂 Folder / File Layout
+## 🗂 Project Structure
 
 ```
 bloom_classifier/
-├── bloom_app.py          # (main code shown below)
-└── README.md
+├── bloom_app.py      # Main Python application
+└── README.md         # Project documentation
 ```
 
 ---
 
 ## 🚀 How to Run
 
-```bash
-# 1. Clone or download
-git clone https://github.com/<your‑handle>/bloom-classifier.git
-cd bloom-classifier
-
-# 2. (Optional) create virtual env
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-
-# 3. Install openpyxl (Tkinter is bundled with Python)
-pip install openpyxl
-
-# 4. Launch the app
-python bloom_app.py
-```
+Vs code 
 
 Login with:
-- **Student** → `student` / `password`
-- **Teacher** → `teacher` / `password`
+
+* **Student** → `student` / `password`
+* **Teacher** → `teacher` / `password`
+
+---
+## ScreenShots 
+<img width="496" height="277" alt="image" src="https://github.com/user-attachments/assets/e14c1f69-edd7-4952-8b39-4ad4aa0b6ae0" />
+<img width="746" height="782" alt="image" src="https://github.com/user-attachments/assets/fc84223d-b7c4-4541-bc43-b7328308b9ab" />
+
+
+
+
+## 🧠 How It Works
+
+1. **Login screen** checks role (hardcoded usernames/passwords).
+2. After login, the **BloomGUI** opens.
+3. User enters questions → app splits them by commas.
+4. Each question is matched against keyword lists for Bloom’s levels.
+5. Classified results are shown in the GUI.
+6. The same data is appended to an Excel file (`questions.xlsx`) on the desktop:
+
+   * Column A → Serial number
+   * Column B → Question text
+   * Column C → Bloom’s level
 
 ---
 
-## 🧠 How It Works (Logic Flow)
+## ✏️ Customizing Keywords
 
-1. **Login Window** decides which role (no DB, just hard‑coded strings).
-2. After success, the **BloomGUI** window appears.
-3. User enters questions → program splits them by comma.
-4. Each question is converted to lowercase and matched against keyword lists for the six Bloom levels.
-5. The identified level (or “Unknown”) is displayed in the GUI.
-6. The same data are appended to `questions.xlsx` on the user’s desktop:
-   - Column A = serial number  
-   - Column B = original question  
-   - Column C = Bloom level
+In `bloom_app.py`, under `self.levels_keywords`, you can add or remove verbs to improve classification.
 
----
-
-## ✏️ Customize the Keyword Lists
-
-Inside `BloomGUI.__init__` you’ll find `self.levels_keywords`.  
-Add or remove verbs to fine‑tune detection—for example:
+Example:
 
 ```python
 "Analyze": ["analyze", "compare", "categorize", "differentiate", "dissect"]
@@ -83,22 +82,18 @@ Add or remove verbs to fine‑tune detection—for example:
 
 ---
 
-## 📈 Possible Improvements
+## 📈 Future Enhancements
 
-- Hash‑based login or integration with a real user database
-- Better NLP (e.g., spaCy) instead of simple keyword matching
-- Export CSV or PDF reports
-- Dark/light theme toggle in Tkinter
-- Mac/Linux Desktop path detection (currently uses Windows `%USERPROFILE%`)
+* ✅ Stronger login system (hashed passwords or DB)
+* ✅ Advanced NLP with **spaCy** or **transformers** instead of simple keyword matching
+* ✅ Export to CSV/PDF for reports
 
 ---
 
 ## 👨‍💻 Author
 
-Shubham Ghalsasi • Final‑year B.Tech (Cloud Computing) • MIT‑ADT University  
-📫 ghalsasishubham@gmail.com
+**Shubham Ghalsasi**
+Final Year B.Tech – Cloud Computing
+MIT ADT University
+📫 [ghalsasishubham@gmail.com](mailto:ghalsasishubham@gmail.com)
 
----
-
-> **Note**  
-> This tool is a proof‑of‑concept for classroom use. Accuracy depends on the keyword lists and may need tweaking for real exams.
