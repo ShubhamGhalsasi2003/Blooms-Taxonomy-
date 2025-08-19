@@ -1,4 +1,5 @@
-![Python](https://img.shields.io/badge/Tool-Python-blue)  ![Completed](https://img.shields.io/badge/Status-Completed-success)
+![Python](https://img.shields.io/badge/Tool-Python-blue)  
+![Completed](https://img.shields.io/badge/Status-Completed-success)
 
 
 
