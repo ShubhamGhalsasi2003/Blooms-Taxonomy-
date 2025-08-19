@@ -7,7 +7,7 @@
 
 
 
-# 🎓 Bloom’s Taxonomy Question Classifier
+# Bloom’s Taxonomy Question Classifier
 **"Bloom’s Taxonomy-Based Question Classification"** uses **NLP** and **WordNet** to categorize questions by cognitive level, enhancing educational assessments.
 
 <img width="293" height="172" alt="image" src="https://github.com/user-attachments/assets/65cc4b25-1fd4-43d2-a074-820b897d16b6" />
@@ -15,20 +15,20 @@
 *six levels of Bloom’s Taxonomy** (Remember, Understand, Apply, Analyze, Evaluate, Create).
 ---
 
-## 📌 Features
+## Features
 
-* 🔑 **Login system** with two roles:
+* **Login system** with two roles:
 
   * Student → `student` / `password`
   * Teacher → `teacher` / `password`
-* 📝 Enter multiple questions separated by commas
-* 🧠 Automatic classification into Bloom’s levels using keyword matching
-* 📊 Entering Question Mannulay 
-* 🖥️ Easy-to-use Tkinter GUI
+* Enter multiple questions separated by commas
+* Automatic classification into Bloom’s levels using keyword matching
+* Entering Question Mannulay 
+* Easy-to-use Tkinter GUI
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Component   | Technology                       |
 | ----------- | -------------------------------- |
@@ -38,7 +38,7 @@
 
 ---
 
-## 🗂 Project Structure
+##  Project Structure
 
 ```
 bloom_classifier/
@@ -48,7 +48,7 @@ bloom_classifier/
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 Vs code 
 
@@ -65,7 +65,7 @@ Login with:
 
 
 
-## 🧠 How It Works
+##  How It Works
 
 1. **Login screen** checks role (hardcoded usernames/passwords).
 2. After login, the **BloomGUI** opens.
@@ -81,15 +81,15 @@ Login with:
 ---
 
 
-## 📈 Future Enhancements
+##  Future Enhancements
 
-* ✅ Stronger login system (hashed passwords or DB)
-* ✅ Advanced NLP with **spaCy** or **transformers** instead of simple keyword matching
-* ✅ Export to CSV/PDF for reports
+* Stronger login system (hashed passwords or DB)
+* Advanced NLP with **spaCy** or **transformers** instead of simple keyword matching
+* Export to CSV/PDF for reports
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Shubham Ghalsasi**
 Final Year B.Tech – Cloud Computing
