@@ -1,4 +1,4 @@
-![Python](https://img.shields.io/badge/Tool-Python-blue)  
+![Python](https://img.shields.io/badge/Tool-Python(Tkinter-&-openpyxl)-blue)  
 ![Completed](https://img.shields.io/badge/Status-Completed-success)
 
 
